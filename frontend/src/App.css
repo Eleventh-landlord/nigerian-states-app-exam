@@ -1,0 +1,88 @@
+/* simple clean styles (no Tailwind) */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.success {
+  color: #065f46;
+}
+
+/* Grid for state cards */
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border:1px solid #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+}
+
+.card h3 {
+  margin:0 0 6px 0;
+}
+
+.card small {
+  color: #555;
+}
+
+.topbar {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
